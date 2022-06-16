@@ -2,3 +2,7 @@ ssh-keygen
 eval $(ssh-agent -s)
 ssh-add <(cat ~/.ssh/id_rsa | tr -d '\r')
 echo "$SSH_PRIVATE_KEY" | ssh-add -
+
+
+### In case Error Permissions 0644 are too open for the <Private_Key> use the below command to set the permissions
+sudo chmod 600 <path_to_private_key>
