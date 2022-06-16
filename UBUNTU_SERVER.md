@@ -7,3 +7,8 @@ User will need to re-login or type the following command to take the effect of a
 ```
 su - ${USER}
 ```
+
+### Give all permissions to a specific foler and sub folers to all the users
+```
+sudo chmod -R a+rwx path
+```
