@@ -1,4 +1,4 @@
-### Run A Service without sudo permission. (Suppose service name is docker)
+### Run A Service without sudo permission for the current user. (Suppose service name is docker)
 
 ```
 sudo usermod -aG docker ${USER}
