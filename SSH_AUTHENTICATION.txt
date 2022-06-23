@@ -6,3 +6,14 @@ echo "$SSH_PRIVATE_KEY" | ssh-add -
 
 ### In case Error Permissions 0644 are too open for the <Private_Key> use the below command to set the permissions
 sudo chmod 600 <path_to_private_key>
+
+
+## Github Use SSH KEY
+Using a specific private key for a git repository. If you want to use that key for all repositories. Then use --global tag
+```
+git config --local core.sshCommand "/usr/bin/ssh -i /home/me/.ssh/id_rsa_foo"
+```
+
+```
+git clone -c core.sshCommand="/usr/bin/ssh -i /home/me/.ssh/id_rsa_foo" git@github.com:me/repo.git
+```
