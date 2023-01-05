@@ -12,3 +12,7 @@ su - ${USER}
 ```
 sudo chmod -R a+rwx path
 ```
+
+### Cheat Sheet
+1. List available users `cut -d: -f1 /etc/passwd`
+2. Add new user `sudo useradd user_name`
