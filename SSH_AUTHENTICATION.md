@@ -20,7 +20,7 @@ git clone -c core.sshCommand="/usr/bin/ssh -i /home/me/.ssh/id_rsa_foo" git@gith
 
 ### Configure You User's Name and User's Email info
 To Configure Email and User's Name for Specific Repository. Type the following commands in the projects root directory.
-1. `git config --local user.name "Your Name"
-2. `git config --local user.email "Your Email"
+1. `git config --local user.name "Your Name"`
+2. `git config --local user.email "Your Email"`
 
 To configure this globally on your machine. Type the above commands any where on your machine. Just replace `--local` with `--global`
